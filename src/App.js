@@ -8,6 +8,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import Update from "./components/share/Update";
 import LeftBar from "./components/leftBar/LeftBar";
 import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
@@ -16,15 +17,19 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
   const {currentUser} = useContext(AuthContext);
 
   const { darkMode } = useContext(DarkModeContext);
 
+  const queryClient = new QueryClient()
+
   const Layout = () => {
     return (
-      <div className={`theme-${darkMode ? "dark" : "light"}`}>
+      <QueryClientProvider client={queryClient}>
+      <div className={`theme-${darkMode ? "light" : "dark"}`}>
         <Navbar />
         <div style={{ display: "flex" }}>
           <LeftBar />
@@ -34,6 +39,7 @@ function App() {
           <RightBar />
         </div>
       </div>
+      </QueryClientProvider>
     );
   };
 
@@ -72,6 +78,7 @@ function App() {
       path: "/register",
       element: <Register />,
     },
+    <Route path="/update/:id" element={<Update/>} /> 
   ]);
 
   return (

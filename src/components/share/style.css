@@ -1,0 +1,158 @@
+
+/*.App{
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+*/
+.new_tablee{
+    display: flex;
+    gap: 10px;
+}
+
+.bookk{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items:center;
+}
+
+imgg{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: aquamarine;
+}
+
+.deletee{
+    border:none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100)
+}
+
+.updatee{
+    border:none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234)
+}
+
+.formm{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+inputt{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+
+}
+
+.formButtonn {
+    border: none;
+    padding: 10px;
+    background-color: rgb(233, 111, 131);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+bodyy {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.containerr {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.headerr {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.book-containerr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.book-cardd {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  text-align: center;
+}
+
+.book-cardd img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.book-titlee {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.book-descriptionn {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.book-pricee {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007BFF;
+  margin: 10px 0;
+}
+
+.button-containerr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.delete-buttonn {
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: #5271ff;
+  border-radius: 3px;
+}
+
+.delete-buttonn:hover {
+  background-color: #d40000;
+}
+
+.update-buttonn a {
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(233, 73, 73);
+  border-radius: 3px;
+}

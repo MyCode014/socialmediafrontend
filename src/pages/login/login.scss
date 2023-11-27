@@ -1,22 +1,25 @@
+
+$sideImage: url('../../assets/side-img.svg');
 .login {
   height: 100vh;
-  background-color: rgb(193, 190, 255);
+  background-color: rgb(14, 14, 14);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 
   .card {
-    width: 50%;
+    width: 60%;
     display: flex;
+    flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     min-height: 600px;
     overflow: hidden;
 
     .left {
       flex: 1;
       background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      $sideImage
           center;
       background-size: cover;
       padding: 50px;
@@ -75,7 +78,7 @@
           width: 50%;
           padding: 10px;
           border: none;
-          background-color: #938eef;
+          background-color: #191820;
           color: white;
           font-weight: bold;
           cursor: pointer;

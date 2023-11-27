@@ -4,20 +4,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px;
 
   .card {
-    width: 50%;
+    width: 60%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     min-height: 600px;
     overflow: hidden;
+  
 
     .left {
       flex: 1;
       background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
+        url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2016_45/1174082/friends-30s-tease-today-161111.jpg")
           center;
       background-size: cover;
       padding: 50px;

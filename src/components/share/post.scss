@@ -1,6 +1,6 @@
 @import "../../style.scss";
 
-.post {
+.postt {
   @include themify($themes) {
     -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
     -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
@@ -9,44 +9,46 @@
     background-color: themed("bg");
     color: themed("textColor");
 
-    .container {
+    .containerr {
       padding: 20px;
+    
+      margin-bottom: 20px; 
 
-      .user {
+      .userr {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .userInfo {
+        .userInfoo {
           display: flex;
           gap: 20px;
 
-          img {
+          imgg {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             object-fit: cover;
           }
 
-          .details {
+          .detailss {
             display: flex;
             flex-direction: column;
 
-            .name {
+            .namee {
               font-weight: 500;
             }
 
-            .date {
+            .datee {
               font-size: 12px;
             }
           }
         }
       }
 
-      .content {
+      .contentt {
         margin: 20px 0px;
 
-        img {
+        imgg {
           width: 100%;
           max-height: 500px;
           object-fit: cover;
@@ -54,17 +56,27 @@
         }
       }
 
-      .info {
+      .infoo {
         display: flex;
         align-items: center;
         gap: 20px;
 
-        .item {
+        .itemm {
           display: flex;
           align-items: center;
           gap: 10px;
           cursor: pointer;
           font-size: 14px;
+        }
+        .right {
+          button {
+            border: none;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+            background-color: #5271ff;
+            border-radius: 3px;
+          }
         }
       }
     }
