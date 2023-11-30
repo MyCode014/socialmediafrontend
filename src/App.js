@@ -45,7 +45,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/" />;
+      return <Navigate to="/home" />;
     }
 
     return children;
@@ -61,7 +61,7 @@ function App() {
       ),
       children: [
         {
-          path: "/",
+          path: "/home",
           element: <Home />,
         },
         {
